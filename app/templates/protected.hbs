@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h1>Protected Page</h1>
+</div>
+<div class="alert alert-warning">
+  This is a protected page only visible to authenticated users!
+</div>
+<h2>List of departments</h2>
+<ul>
+  {{#each model as |department|}}
+    <li>
+      <h3>{{department.name}}</h3>
+    </li>
+  {{/each}}
+</ul>

@@ -20,7 +20,15 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline'"
+    },
+
+    apiHost: 'https://localhost:44362/api', //'http://api-ng.unotek.co.id', //'https://localhost:44362/api',
+
+    authHost: 'https://localhost:44362/api/token-auth'//'http://newhearts-proxy.unotek.co.id/login'
   };
 
   if (environment === 'development') {

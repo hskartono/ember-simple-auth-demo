@@ -1,0 +1,12 @@
+<div class="page-header">
+  <h1>Ember Simple Auth example app</h1>
+</div>
+{{#unless session.isAuthenticated}}
+  <div class="alert alert-info">
+    You can {{#link-to "login" classNames="alert-link"}}log in{{/link-to}} with login <code>harry</code> and password <code>azpiration128</code>.
+  </div>
+{{/unless}}
+<div class="alert alert-info">
+  Ini adalah aplikasi contoh untuk proses login menggunakan oAuth - link {{#link-to "protected"}}Protected Page{{/link-to}} merupakan
+  halaman yang dilindungi oleh proteksi token dan hanya bisa diakses jika sudah login.
+</div>
